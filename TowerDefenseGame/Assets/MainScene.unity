@@ -270,7 +270,7 @@ Prefab:
     - target: {fileID: 114947733723076382, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseMissileLauncher
+      value: SelectMissileLauncher
       objectReference: {fileID: 0}
     - target: {fileID: 114947733723076382, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
@@ -4272,6 +4272,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f0f15f2be752cd44ae24419f894640f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  standardTurret:
+    prefab: {fileID: 1536508916915254, guid: d46abee2afa2ef243a795ca1ec85634d, type: 2}
+    cost: 100
+  missileLauncher:
+    prefab: {fileID: 1044767338112668, guid: 5b63834512e81cf49a7c8d687d7de2bf, type: 2}
+    cost: 250
 --- !u!1001 &542340564
 Prefab:
   m_ObjectHideFlags: 0
@@ -6667,7 +6673,7 @@ Prefab:
     - target: {fileID: 114947733723076382, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseStandardTurret
+      value: SelectStandardTurret
       objectReference: {fileID: 0}
     - target: {fileID: 114947733723076382, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
@@ -8356,6 +8362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.2352941, g: 0.2352941, b: 0.2352941, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  turret: {fileID: 0}
 --- !u!1001 &1099871148
 Prefab:
   m_ObjectHideFlags: 0
@@ -9857,6 +9864,7 @@ GameObject:
   - component: {fileID: 1303328862}
   - component: {fileID: 1303328861}
   - component: {fileID: 1303328863}
+  - component: {fileID: 1303328864}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -9908,6 +9916,18 @@ MonoBehaviour:
     type: 2}
   missileLauncherPrefab: {fileID: 1044767338112668, guid: 5b63834512e81cf49a7c8d687d7de2bf,
     type: 2}
+--- !u!114 &1303328864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303328860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6229ddf6dedf28c40ab0a9b9ec2ecb27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 400
 --- !u!1001 &1303567140
 Prefab:
   m_ObjectHideFlags: 0
