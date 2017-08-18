@@ -2,7 +2,7 @@
 
 public class CamaraController : MonoBehaviour
 {
-    private bool doMovement = true;
+    private bool doMovement = false;
     public float panSpeed = 30f;
     public float panBorderThinkness = 10f;
     public float scrollSpeed = 5f;
