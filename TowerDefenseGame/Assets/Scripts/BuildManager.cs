@@ -9,6 +9,8 @@ public class BuildManager : MonoBehaviour
     public NodeUI nodeUI;
 
     public GameObject buildEffect;
+    public GameObject sellEffect;
+
     public bool CanBuild { get { return turretToBuild != null; } }
     public bool HasMoney { get { return PlayerStats.money >= turretToBuild.cost; } }
 

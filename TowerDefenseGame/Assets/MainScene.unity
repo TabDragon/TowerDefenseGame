@@ -2426,7 +2426,7 @@ GameObject:
   - component: {fileID: 272267285}
   - component: {fileID: 272267284}
   m_Layer: 0
-  m_Name: Cost
+  m_Name: Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3029,6 +3029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 471813801}
   upgradeCost: {fileID: 122449362}
+  sellAmount: {fileID: 272267284}
   upgradeButton: {fileID: 1519570083}
 --- !u!1001 &331663790
 Prefab:
@@ -4035,7 +4036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &471813802
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4973,13 +4974,15 @@ MonoBehaviour:
   missileLauncher:
     prefab: {fileID: 1044767338112668, guid: 5b63834512e81cf49a7c8d687d7de2bf, type: 2}
     cost: 250
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 1044767338112668, guid: 3b73c96628034614588a05df201d9eed,
+      type: 2}
+    upgradeCost: 150
   LaserBeamer:
     prefab: {fileID: 1072272419991806, guid: f121de79140d87b4292f064b227e4dbe, type: 2}
     cost: 350
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 1072272419991806, guid: 462612f3b25e3ae4d8398fb072924dd5,
+      type: 2}
+    upgradeCost: 250
 --- !u!1001 &542340564
 Prefab:
   m_ObjectHideFlags: 0
@@ -11518,10 +11521,10 @@ RectTransform:
   m_Father: {fileID: 143222269}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 157.5, y: -32.28}
+  m_SizeDelta: {x: 105, y: 64.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1233900571
 MonoBehaviour:
@@ -11562,7 +11565,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1233900572}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 325335055}
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1233900572
@@ -11980,6 +11994,7 @@ MonoBehaviour:
   nodeUI: {fileID: 325335055}
   buildEffect: {fileID: 1242513538216324, guid: caf6b8d014f6e3541b398b59b167d274,
     type: 2}
+  sellEffect: {fileID: 1706900691214980, guid: 0cdb32ce4a29d104f90823fecfaaf547, type: 2}
 --- !u!114 &1303328864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14238,10 +14253,10 @@ RectTransform:
   m_Father: {fileID: 143222269}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 52.5, y: -32.28}
+  m_SizeDelta: {x: 105, y: 64.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519570083
 MonoBehaviour:
