@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: da577c39670020d4c9b0df7354de09ec
-timeCreated: 1502798714
+guid: 18634eea6616c2d4babd1ca4caa544b3
+timeCreated: 1503067892
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -44,7 +44,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.5
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -63,8 +63,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 38
-    normalImportMode: 1
+    normalSmoothAngle: 60
+    normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
