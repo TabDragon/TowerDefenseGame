@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23405059293337910}
   - component: {fileID: 114342070296576924}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: Bullet_Upgraded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,7 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0100864f09ae74c44b750126f0395d9e, type: 2}
+  - {fileID: 2100000, guid: 17b906e2b16a3ff43978c9d625dfe50d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28c6fa7162174241b1e489b0773523f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 70
-  damage: 50
+  speed: 80
+  damage: 60
   explosionRadius: 0
   impactEffect: {fileID: 1857238295749824, guid: 535a6e89c64d9dd46b94721469b4857d,
     type: 2}
