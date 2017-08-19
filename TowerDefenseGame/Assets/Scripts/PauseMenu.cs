@@ -5,6 +5,8 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject ui;
     public static bool GameIsPaused;
+    public SceneFader sceneFader;
+    public string menuSceneName = "MainMenu";
 
     // Use this for initialization
     private void Start()
@@ -39,11 +41,12 @@ public class PauseMenu : MonoBehaviour
     public void Retry()
     {
         Toggle();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        sceneFader.FadeTo(SceneManager.GetActiveScene().name);
     }
 
     public void Menu()
     {
-
+        Toggle();
+        sceneFader.FadeTo(menuSceneName);
     }
 }
