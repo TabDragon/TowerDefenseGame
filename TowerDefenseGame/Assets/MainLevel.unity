@@ -8349,7 +8349,7 @@ Prefab:
     - target: {fileID: 224440692866943606, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 224440692866943606, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
@@ -8359,7 +8359,7 @@ Prefab:
     - target: {fileID: 224440692866943606, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 224440692866943606, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
@@ -9854,7 +9854,7 @@ Prefab:
     - target: {fileID: 224440692866943606, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 224440692866943606, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
@@ -9864,7 +9864,7 @@ Prefab:
     - target: {fileID: 224440692866943606, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 224440692866943606, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
@@ -12640,10 +12640,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acbca9cb0e566194aaf0b848f3fdc106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4939752170096870, guid: b1b63da44bfbf244ca4ae080cdc74d49,
-    type: 2}
+  waves:
+  - enemyPrefab: {fileID: 1324189658044066, guid: b1b63da44bfbf244ca4ae080cdc74d49,
+      type: 2}
+    amountOfEnemies: 1
+    spawnRate: 2
+  - enemyPrefab: {fileID: 1324189658044066, guid: b1b63da44bfbf244ca4ae080cdc74d49,
+      type: 2}
+    amountOfEnemies: 2
+    spawnRate: 2
+  - enemyPrefab: {fileID: 1324189658044066, guid: b1b63da44bfbf244ca4ae080cdc74d49,
+      type: 2}
+    amountOfEnemies: 5
+    spawnRate: 2
+  - enemyPrefab: {fileID: 1324189658044066, guid: 085f422528ef0c74280abee9fa1cc399,
+      type: 2}
+    amountOfEnemies: 3
+    spawnRate: 1
+  - enemyPrefab: {fileID: 1324189658044066, guid: 6df491f6cc51bd848b3805331b77e9ef,
+      type: 2}
+    amountOfEnemies: 10
+    spawnRate: 3
   spawnPoint: {fileID: 1674950993}
-  timeBetweenWaves: 10
+  timeBetweenWaves: 3
   waveCountdownText: {fileID: 1195499235}
 --- !u!4 &1303328862
 Transform:
@@ -19595,7 +19614,7 @@ Prefab:
     - target: {fileID: 224440692866943606, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 224440692866943606, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
@@ -19605,7 +19624,7 @@ Prefab:
     - target: {fileID: 224440692866943606, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 224440692866943606, guid: edb03fa1982251d439e9e60cde84a0e7,
         type: 2}
