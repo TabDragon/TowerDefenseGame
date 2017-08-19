@@ -16,13 +16,13 @@ public class CamaraController : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
-        if(GameManager.GameIsOver)
+        if (GameManager.GameIsOver || PauseMenu.GameIsPaused)
         {
             this.enabled = false;
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             doMovement = !doMovement;
         }
