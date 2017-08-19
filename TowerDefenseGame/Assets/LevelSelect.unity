@@ -109,6 +109,12 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &62200108 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114679647821473666, guid: 696fd775a3f2fe247b6b9ff0cc885f90,
+    type: 2}
+  m_PrefabInternal: {fileID: 1795192156}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &223400138
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,6 +389,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 1735347761}
+  levelButtons:
+  - {fileID: 62200108}
+  - {fileID: 1720736330}
 --- !u!224 &665538402
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1155,6 +1164,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224811509381516004, guid: 696fd775a3f2fe247b6b9ff0cc885f90,
     type: 2}
   m_PrefabInternal: {fileID: 795733753}
+--- !u!114 &1720736330 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114679647821473666, guid: 696fd775a3f2fe247b6b9ff0cc885f90,
+    type: 2}
+  m_PrefabInternal: {fileID: 795733753}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!114 &1735347761 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114793116854939262, guid: a6f0c8754d03c064eb3c7bfe24bdf75a,
@@ -1292,6 +1307,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level01
+      objectReference: {fileID: 0}
+    - target: {fileID: 114637898965636394, guid: 696fd775a3f2fe247b6b9ff0cc885f90,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 696fd775a3f2fe247b6b9ff0cc885f90, type: 2}
